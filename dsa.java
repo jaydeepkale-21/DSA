@@ -1,39 +1,65 @@
+
 import java.util.*;
 public class dsa{
 public static void main(String[] args) {
-    Scanner sc=new Scanner(System.in);
-    System.out.println("Enter a binary number:");
-  int num=sc.nextInt();
-  decimalTObinary(num);
-}
+  Scanner sc=new Scanner(System.in);
+  int a=sc.nextInt();
+  // int b=sc.nextInt();
+ sum(a);
 
-// ---------binary to decimal
+    }
 
-//   public static void binTOdecimal(int num){
-//     int decimal=0;
-//     int i=0;
+    // ---------Even odd-----------
+    // public static void isEven(int n){
+    //   boolean a=false;
+    //   if(n%2==0){
+    //     a=true;
+    //   }
+    //   System.out.println("number is Even "+a);
+    // }
+   
+
+    // -------Palindrome number checking
+  //   public static void checkpali(int n){
+  //   int original=n;
+  //   int rev=0;
+  //   while(n>0){
+  //     int rem=n%10;
+  //     rev=rev*10+rem;
+   
+  //     n/=10;
+  //   }
+  //   if(original==rev){
+  //     System.out.println("number is Palindrome "+original);
+  //   }
+  //   else{
+  //     System.out.println("is not palindrom "+original);
+  //   }
+  // }
+
+
+  // -----Math function they under Math.lang----------
+// public static void Mathinbuilt(float  a,int b){
+//   System.out.println("Checking mininum number:"+Math.min(a,b));
+//   System.out.println("Checking maximum number:"+Math.max(a,b));
+//   System.out.println("Give number squareRoot:"+Math.sqrt(a));
+//   System.out.println("They give absolute:"+Math.abs(a));
+//   System.out.println("it give round up value:"+Math.round(a));
+// }
+
+
+// ------------sum of number-----
+// public static void sum(int num){
+//   int sum=0;
 //   while(num>0){
-//     int last_digit=num%10;
-//     decimal=decimal+(last_digit*(int)Math.pow(2,i));
+//     int rem=num%10;
+//     sum+=rem;
 //     num/=10;
-//     i++;
 //   }
-//   System.out.println(decimal);
-//   }
-
-// ------------decimal to binary-----------
-public static void decimalTObinary(int num){
-    int pow=0;
-    int binNum=0;
-    while(num>0){
-        int rem=num%2;
-       binNum=binNum+(rem*(int)Math.pow(10,pow));
-       pow++;
-       num/=2;
-    }
-    System.out.println("binary number is:"+binNum);
-    }
+//   System.out.println(sum);
+// }
   }
+
 
 
 
