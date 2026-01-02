@@ -1,4 +1,4 @@
-public class TripRainWater {
+public class TripRainWater1 {
     public static int TripWater(int height[]) {
         int n=height.length;
         // Left max array
