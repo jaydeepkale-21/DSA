@@ -74,7 +74,6 @@ public class SortingArray{
         int j=0;
         for(int i=0;i<count.length;i++){
             while(count[i]>0){
-                // System.out.print(count[i]); o/p=2,1,2,1,2,1,1,2,1,1
                 arr[j]=i;
                 j++;
                 count[i]--;
