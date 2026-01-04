@@ -44,5 +44,4 @@ public class Sprial_Matrix_problem {
             };
             Print_Sprial(arr);
         }
-        
     }

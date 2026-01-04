@@ -14,18 +14,6 @@ public class TwoDArray {
         System.out.println("Maximum number is: "+max);
         System.out.println("Minimum number is: "+min);
     }
-
-    // Printing 
-      public static void Print_Sprial(int arr[][]){
-        for(int i=0;i<arr.length;i++){
-            for(int j=0;j<arr[i].length;j++){
-               if(i,j==1 ){
-
-               }
-            }
-        }
-        
-    }
     public static void main(String args[]){
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter row Size: ");
