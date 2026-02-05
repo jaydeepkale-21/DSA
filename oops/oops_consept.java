@@ -1,30 +1,52 @@
-package oops;          // package name
+package oops;
 
-// -------- Main class --------
-public class oops_consept {   // class name
+public class oops_consept{
+    public static void main(String args[]) {
+        person p1 = new person();
+        person p3 = new person(2);
+        person p4 = new person("jaydeep",2);
+       p1.a=60;
+       p1.name="Jaydeep";
+       p1.age=18;
+       person p2=new person(p1); //copy costractor
+       System.out.println(p2.a);
+       System.out.println(p2.name);
+       System.out.println(p2.age);
+    }
+}
+// Getter and Setter for Private access modifer
+class Pen {
+    String name;
+    private int  tip;
+    private String color;
 
-    public static void main(String args[]) {   // main method
-
-        Pen p1 = new Pen();    // object creation (reference variable p1)
-
-        p1.change_color("blue",5); // method call (change_color)
-
-        System.out.println(p1.color); // accessing instance variable (color)
-        // p1.tip=5;
-        // System.out.println(p1.tip);
+    void set_value(String newcolor,int tip) {
+        color = newcolor;
+        this.tip=tip;
+    }
+    int get_value(){
+        return this.tip;
+        // return  this.color;
     }
 }
 
-// -------- User-defined class --------
-class Pen {               // class name
-
-    String name;          // instance variable
-     private int tip;              // instance variable
-    String color;         // instance variable
-
-    void change_color(String newcolor,int tips) { // method
-        color = newcolor; // assigning value to instance variable
-        tip=tips;
-        System.out.println(tip);
+class person{
+    int a;
+    String name;
+    int age;
+    person(person p1){
+        this.a=a;
+        this.name=name;
+        this.age=age;
+    }
+    person(){
+        System.out.println("non paramerized constructor");
+    }
+    person(int a){
+        this.a=a;
+    }
+    person(String name,int age){
+        this.name=name;
+        this.age=age;
     }
 }
